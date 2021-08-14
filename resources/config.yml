@@ -1,0 +1,38 @@
+#   ___       _          ___          _    _  _____  _                   _
+#  / _ \     | |        / _ \        | |  (_)/  __ \| |                 | |
+# / /_\ \  __| |__   __/ /_\ \ _ __  | |_  _ | /  \/| |__    ___   __ _ | |_
+# |  _  | / _` |\ \ / /|  _  || '_ \ | __|| || |    | '_ \  / _ \ / _` || __|
+# | | | || (_| | \ V / | | | || | | || |_ | || \__/\| | | ||  __/| (_| || |_
+# \_| |_/ \__,_|  \_/  \_| |_/|_| |_| \__||_| \____/|_| |_| \___| \__,_| \__|
+#
+#                Twitter: https://twitter.com/XDLear
+
+
+# ARQUIVO DE CONFIGURAÇÃO DO ANTICHEAT!
+# ALGUMAS OPÇÕES PEDEM INFORMAÇÕES QUE VARIAM ENTRE 'true' ou 'false'
+# Lembre-se: TRUE = ATIVADO, FALSE = DESATIVADO
+
+# NÃO HÁ NECECIDADE DE MODIFICAR NADA AQUI :D
+
+# ATIVAR ANTI AUTOGAP?
+anti-autogap: true
+# TEMPO MINIMO PARA COMER A MAÇÃ (NEM SEMPRE É O CORRETO, MAS APÓS VARIOS TESTES A MÉDIA FOI 1.2 SEGUNDOS)
+anti-autogap-time: 1.4
+
+# ATIVAR ANTI FLY?
+anti-fly: true
+# PRECISÃO DO ANTI FLY (QUANTO MAIOR MAIS O JOGADOR IRA CONSEGUIR VOAR)
+# NÃO DEIXE MENOR QUE 15
+anti-fly-precision: 15
+
+# ATIVAR ANTI REACH/HITBOX? (Frontal)
+anti-reach: true
+# DISTANCIA EM QUE É PERMITIDO BATER
+# O PADRÃO É 3.0, POREM POR QUESTÕES DE LATENCIA RECOMENDO DEIXAR 4.5
+anti-reach-distance: 4.5
+
+# ATIVAR O ANTI AUTOCLICKER?
+anti-auto-clicker: true
+# COUNTDOWN DE CADA HIT, PODE CONSERTAR O ERRO DA REGENERAÇÃO :D
+# 0.5 = 2 HITS POR SEGUNDO
+anti-auto-clicker-countdown: 0.5
