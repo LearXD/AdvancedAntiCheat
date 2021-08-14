@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://www.google.com/search?q=shield%20png&tbm=isch&tbs=ic:trans&client=ms-opera-gx-android&prmd=insv&hl=pt-BR&sa=X&ved=0CAMQpwVqFwoTCOjq3N34sPICFQAAAAAdAAAAABAD&biw=980&bih=1956#imgrc=5MGGCXZ0Bo8TMM"/>
+  <img src= "https://www.freeiconspng.com/thumbs/shield-png/shield-png-4.png"/>
 </p>
 
 <h1 align="center">Advanced Anti-Cheat vAlpha</h1>
@@ -43,7 +43,4 @@ Options that are not checked will still be developed or are already in the testi
 	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCI3bTDV6qRme2PybHw5ND7XrXjgMNC4sgZzJwlitqjb6VkFHlok5ZcrM&s=10" height="40">
   </a>
   
-	<a href="https://twitter.com/XdLear">
-	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCI3bTDV6qRme2PybHw5ND7XrXjgMNC4sgZzJwlitqjb6VkFHlok5ZcrM&s=10" height="40">
-  </a>
 </p>
