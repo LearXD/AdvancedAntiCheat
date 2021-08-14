@@ -40,7 +40,7 @@ Options that are not checked will still be developed or are already in the testi
 <p align="center">
   
   <a href="https://twitter.com/XdLear">
-	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCI3bTDV6qRme2PybHw5ND7XrXjgMNC4sgZzJwlitqjb6VkFHlok5ZcrM&s=10" height="40>
-	</a>
+	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCI3bTDV6qRme2PybHw5ND7XrXjgMNC4sgZzJwlitqjb6VkFHlok5ZcrM&s=10" height="40">
+  </a>
   
 </p>
