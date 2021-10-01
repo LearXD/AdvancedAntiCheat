@@ -34,5 +34,5 @@ anti-reach-distance: 4.5
 # ATIVAR O ANTI AUTOCLICKER?
 anti-auto-clicker: true
 # COUNTDOWN DE CADA HIT, PODE CONSERTAR O ERRO DA REGENERAÇÃO :D
-# 0.5 = 2 HITS POR SEGUNDO
-anti-auto-clicker-countdown: 0.5
+# 0.25 = 4 HITS POR SEGUNDO
+anti-auto-clicker-countdown: 0.25
