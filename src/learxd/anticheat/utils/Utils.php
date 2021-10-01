@@ -31,7 +31,7 @@ final class Utils
      * @param float $step
      * @return Vector3
      */
-    public static function getSide(Block $block, int $side = Vector3::SIDE_NORTH, float $step = 0.4): Vector3
+    public static function getSide(Block $block, int $side = Vector3::SIDE_NORTH, float $step = 0.8): Vector3
     {
         switch ($side) {
             case Vector3::SIDE_NORTH:
