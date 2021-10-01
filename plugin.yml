@@ -1,5 +1,5 @@
 name: AdvancedAntiCheat
-version: 0.0.1
+version: 0.0.2
 author: LearXD
 api: [2.0.0]
 main: learxd\anticheat\Main
