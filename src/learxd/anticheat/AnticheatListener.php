@@ -39,12 +39,8 @@ class AnticheatListener implements \pocketmine\event\Listener
 
     public function onInteract(PlayerInteractEvent $event){
         $player = $event->getPlayer();
-        switch ($event->getItem()->getId()){
-            case Item::GOLDEN_APPLE:
-			case Item::ENCHANTED_GOLDEN_APPLE:
+        if($event->getItem() instanceof \pocketmine\item\Food){
                 if (Main::getConfiguration('anti-autogap')) $this->lastInteract[strtolower($player->getName())][$event->getItem()->getId()] = microtime(true);
-                break;
-			
         }
     }
 
@@ -52,13 +48,12 @@ class AnticheatListener implements \pocketmine\event\Listener
         $player = $event->getPlayer();
         if (Main::getConfiguration('anti-autogap')) {
             if (
-                $event->getItem()->getId() == Item::GOLDEN_APPLE and
+                $event->getItem() instanceof \pocketmine\item\Food and
                 isset($this->lastInteract[strtolower($player->getName())][$event->getItem()->getId()]) and
                 (microtime(true) - ($this->lastInteract[strtolower($player->getName())][$event->getItem()->getId()])) <= Main::getConfiguration('anti-autogap-time')
             ) {
                 $event->setCancelled(true);
             }
-            //var_dump((microtime(true) - ($this->lastInteract[strtolower($player->getName())][$event->getItem()->getId()])));
         }
     }
 
@@ -109,18 +104,25 @@ class AnticheatListener implements \pocketmine\event\Listener
                 $data = $this->lastMovement[strtolower($player->getName())];
                 /** @var Position $position */
                 $position = $data[0];
+                $player->sendPopup("A: " . ($player->getY() - $position->getY()));
 
                 if ($data[1] >= (Main::getConfiguration('anti-fly-precision') < 15 ? 15 :  Main::getConfiguration('anti-fly-precision'))) {
+                	$player->setAllowFlight(false);
+					$pk = new \pocketmine\network\protocol\SetPlayerGameTypePacket();
+					$pk->gamemode = Player::SURVIVAL & 0x01;
+					$player->dataPacket($pk);
+					$player->sendSettings();
+                	
                     $player->teleport($position);
                     $this->lastMovement[strtolower($player->getName())] = [$position, 0];
 
                 } else if (
-                    (($player->getY() - $position->getY()) < 1 or
-                        $player->distance($position) < 6) and
+                    (($player->getY() - $position->getY()) < 1.5 or
+					$position->distance($player) < 6) and
                     Utils::checkAround($player)
                 ) {
                     $this->lastMovement[strtolower($player->getName())] = [$player->getPosition(), 0];
-                } else {
+                } else if(($player->getY() - $position->getY()) > 1.5){
                     $this->lastMovement[strtolower($player->getName())][1]++;
                 }
 
