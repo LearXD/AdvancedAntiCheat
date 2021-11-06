@@ -104,7 +104,7 @@ class AnticheatListener implements \pocketmine\event\Listener
                 $data = $this->lastMovement[strtolower($player->getName())];
                 /** @var Position $position */
                 $position = $data[0];
-                $player->sendPopup("A: " . ($player->getY() - $position->getY()));
+               
 
                 if ($data[1] >= (Main::getConfiguration('anti-fly-precision') < 15 ? 15 :  Main::getConfiguration('anti-fly-precision'))) {
                 	$player->setAllowFlight(false);
